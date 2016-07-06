@@ -1,0 +1,12 @@
+<!-- toolbox是velocity自带的一个工具，可以预定义一些对象，方便访问
+     定义了一个变量对象date，是属于org.apache.velocity.tools.generic.DateTool这个类的。
+     可以调用这个类的方法来处理时间的，比如format在html或者vm里面对时间做格式化
+     引入这个工具需要在application.properties引入。
+ -->
+<toolbox>
+    <tool>
+        <key>date</key>
+        <scope>application</scope>
+        <class>org.apache.velocity.tools.generic.DateTool</class>
+    </tool>
+</toolbox>
